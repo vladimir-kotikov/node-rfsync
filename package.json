@@ -1,0 +1,34 @@
+{
+  "name": "node-rfsync",
+  "version": "1.0.0",
+  "description": "An utility to watch and sync file/directory changes to remote host",
+  "main": "index.js",
+  "bin": {
+    "rfsync": "out/main.js"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "client": "node client.js",
+    "server": "node server.js",
+    "start": "node server.js",
+    "prepublish": "npm run build"
+  },
+  "author": {
+    "name": "Vladimir Kotikov",
+    "email": "kotikov.vladimir@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "^1.7.0",
+    "noice-json-rpc": "^1.0.1",
+    "nopt": "^4.0.1",
+    "tar": "^3.1.3",
+    "ws": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/chokidar": "^1.6.0",
+    "@types/nopt": "^3.0.29",
+    "@types/ws": "0.0.41",
+    "typescript": "^2.3.2"
+  }
+}
